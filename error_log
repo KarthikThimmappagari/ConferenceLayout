@@ -1,0 +1,10 @@
+[25-Feb-2026 08:14:28 UTC] PHP Warning:  A non-numeric value encountered in /home/daiaqfsjel68/public_html/foodscience.averconferences.com/pay.php on line 18
+[25-Feb-2026 08:14:28 UTC] PHP Notice:  Undefined variable: total in /home/daiaqfsjel68/public_html/foodscience.averconferences.com/pay.php on line 27
+[25-Feb-2026 08:14:29 UTC] PHP Fatal error:  Uncaught Razorpay\Api\Errors\BadRequestError: Order amount less than minimum amount allowed in /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Request.php:142
+Stack trace:
+#0 /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Request.php(109): Razorpay\Api\Request->processError(Array, 400, Object(Requests_Response))
+#1 /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Request.php(58): Razorpay\Api\Request->checkErrors(Object(Requests_Response))
+#2 /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Entity.php(86): Razorpay\Api\Request->request('POST', 'https://api.raz...', Array)
+#3 /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Entity.php(15): Razorpay\Api\Entity->request('POST', 'orders/', Array)
+#4 /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Order.php(12): Razorpay\Api\Entity->create(Array)
+#5 /home/daiaqfsjel68/public_ht in /home/daiaqfsjel68/public_html/foodscience.averconferences.com/razorpay-php/src/Request.php on line 142

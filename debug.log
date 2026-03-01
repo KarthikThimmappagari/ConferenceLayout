@@ -1,0 +1,3 @@
+[2026-02-26 18:56:45] ContactMail Absolute START
+[2026-02-26 10:56:45] ContactMail Hit: {"title":"Mr.","name":"Karthik T","org":"Testing ","job_title":"Testing2","city":"Testing3","email":"thimmappagarikarthik@gmail.com","phone":"8639892481","country":"Andorra","total":"1348.00","regData":"Speaker: $649<br\/>Poster: $699<br\/>No of participants: 1<br\/>Total participants: $1298<br\/>","billingAddress":"testing","promoCode":"","discount":""}
+[2026-02-26 10:56:45] PDO set, trying insert

@@ -1,0 +1,24 @@
+# Prevent directory listing
+Options -Indexes
+
+# Block sensitive files
+<FilesMatch "\.(sql|log|bak|swp|dist|env)$">
+    order allow,deny
+    deny from all
+</FilesMatch>
+
+# Specifically protect db config if accessed directly
+<Files "config.php">
+    order allow,deny
+    deny from all
+</Files>
+
+# Security Headers (Uncomment for production)
+# Header set X-Content-Type-Options "nosniff"
+# Header set X-Frame-Options "SAMEORIGIN"
+# Header set X-XSS-Protection "1; mode=block"
+
+# Force HTTPS (Uncomment on production)
+# RewriteEngine On 
+# RewriteCond %{SERVER_PORT} 80 
+# RewriteRule ^(.*)$ https://foodscience.averconferences.com/$1 [R,L]
